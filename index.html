@@ -26,36 +26,71 @@
             <!-- Το μενού -->
             <article id="Menu">
                 <section>
-                    <img href="" alt="">
-                    <p class="description">περιγραφή</p>
-                    <p class="price">τιμή</p>
+                    <img href="images/pita souvlaki.jpg" alt="">
+                    <p class="description">Πίτα με σουβλάκι χοιρινό,πατάτες,ντομάτα,κρεμμύδι και τζατζίκι</p>
+                    <p class="price">2e</p>
+                </section>
+                <section>
+                        <img href="/images/pita souvlaki.jpg" alt="">
+                        <p class="description">Πίτα με σουβλάκι κοτόπουλο,πατάτες,μαρούλι,κρεμμύδι και τζατζίκι</p>
+                        <p class="price">2e</p>
+                </section>
+                <section>
+                        <img href="/images/pita gyros.jpg" alt="">
+                        <p class="description">Πίτα με γύρο χοιρινό,πατάτες,ντομάτα,κρεμμύδι και τζατζίκι</p>
+                        <p class="price">2.2e</p>
+                </section>
+                <section>
+                        <img href="/images/pita loukaniko.jpg" alt="">
+                        <p class="description">Πίτα με λουκάνικο,πατάτες,ντομάτα,κρεμμύδι και τζατζίκι</p>
+                        <p class="price">2.2e</p>
+                </section>
+                <section>
+                        <img href="/images/merida souvlakia.jpg" alt="">
+                        <p class="description">Μερίδα γύρος χοιρινός με πατάτες,ντομάτα,κρεμμύδι, τζατζικάκι και τρία πιτόφυλλα</p>
+                        <p class="price">7.5e</p>
+                </section>
+                <section>
+                        <img href="/images/merida gyros.jpg" alt="">
+                        <p class="description">Μερίδα σουβλάκια χοιρινά με πατάτες,ντομάτα,κρεμμύδι, τζατζικάκι και τρία πιτόφυλλα</p>
+                        <p class="price">7.5e</p>
                 </section>
            
             </article>
              <!-- Η φόρμα επικοινωνίας -->
             <article id="Contact us">
-                
+                <form action="POST">
+                    <label for="name">Δώστε το όνομά σας :</label>
+                    <input type="text" id="name" name="name" value ="Δώστε το όνομά σας">
+                    <label for="email">Δώστε το email σας :</label>
+                    <input type="email" id="email" name="email" value ="Δώστε το email σας" required>
+                    <label for="order">Δώστε την παραγγελία σας :</label>
+                    <input type="text" id="order" name="order" value ="Δώστε την παραγγελία σας">
+                    <button type="submit">Οριστικοποιήστε την παραγγελία σας</button>
+                </form>
             </article>
             <!-- Ο χάρτης του μαγαζιού -->
             <article id="Map">
-    
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=dimosthenous%2010%20athens&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:600px;}</style></div>
             </article>
             <!-- Τα στοιχεία επικοινωνίας -->
-            
+                <p id="epikoinonia">Ανδρέας Βαλσαμής </br> τηλ:+306976166169</p>
             <article id="About us">
     
             </article>
             <!-- Φωτογραφίες προιόντων μαγαζιού -->
             <article id="Open hours">
-                
-                </article>
+                <img src="images/background2.jpg" alt="">
+                <img src="images/background3.jpg" alt="">
+                <img src="images/anapsiktika.jpg" alt="">
+            </article>
             <!-- Το ωράριο -->
             <article id="Open hours">
-                
+                <p>Ωράριο λειτουργίας από Δευτέρα έως Σάββατο 9:00-22:00</p>
             </article>
             <!-- Περιγραφή γιατί είναι καλής διατροφής -->
             <article id="Healthy">
-                
+                <p>μια βασική περιγραφή γιατί με σωστές πρώτες ύλες και σωστό τρόπο ετοιμασίας είναι καλή διατροφή</p>
             </article>
             
         </main>
@@ -71,5 +106,6 @@
             </article>
 
         </footer>
+      
     </body>
 </html>

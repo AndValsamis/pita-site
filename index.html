@@ -1,8 +1,10 @@
+
+<!DOCTYPE html>
 <html>
     <head>
         <title>Psitopolio</title>
         <link rel="stylesheet" type="text/css" href="main.css">
-        <script src="mainCode.js" type="txt/javascript"></script>
+        <!-- <script src="mainCode.js" type="txt/javascript"></script> -->
     </head>
     <body>
         <header id="Header">
@@ -20,10 +22,13 @@
                 <li><a href="#Healthy">Why it is Healthy</a></li>
             </nav>
         </header>
+
         <main>
             <!-- Fixed button to go to top of page -->
+            <button id="goTop"><a href="#Header">Menu</a></button>
             <!-- select language en/gr/cz -->
             <!-- Menu -->
+
             <article id="Menu">
                 <section>
                     <img src="images/pita souvlaki.jpg" alt="pita souvlaki">
@@ -57,15 +62,18 @@
                 </section>
            
             </article>
-             <!-- Contact form -->
-            <article id="ContactUs">
-                <form id ="orderForm" action="POST">
+             <!-- Order form -->
+            <article id="Order">
+                <form id ="OrderForm" action="POST">
                     <label for="name">Your name :
-                    <input type="text" id="name" name="name" value ="Write your name here"></label>
-                    <label for="email">Your email :</label>
-                    <input type="email" id="email" name="email" value ="Write your email here" required>
-                    <label for="order">Your order :</label>
-                    <input type="text" id="order" name="order" value ="Write your order here">
+                         <input type="text" id="name" name="name" value ="Write your name here">
+                    </label>
+                    <label for="email">Your email :
+                        <input type="email" id="email" name="email" value ="Write your email here" required>
+                    </label>
+                    <label for="order">Your order :
+                        <input type="text" id="order" name="order" value ="Write your order here">
+                    </label>
                     <button type="submit">Commit your order</button>
                 </form>
             </article>
@@ -76,7 +84,7 @@
 
             <!-- Contact info -->
             <article id="AboutUs">
-                <p id="Contact">Andreas Valsamis </p>
+                <p id="Contact">Nikos Papadopoulos</p>
                 <p id="Contact">τηλ:+306976166169</p>
             </article>
 
@@ -104,6 +112,7 @@
             </article>
             
         </main>
+ 
         <footer>
             <article id="SocialMedia">
                 <!-- With a few good reviews -->

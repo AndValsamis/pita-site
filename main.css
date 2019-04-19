@@ -1,4 +1,6 @@
-/* staring for mobile phones later adding @media for bigger resolutions */
+/* A simple site  */
+/* Staring for mobile screens and later adding support for bigger resolutions */
+
 /* border boxing */
 html {
     box-sizing: border-box;
@@ -7,7 +9,7 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
     margin:0 auto;
-    width:90%;
+    width:100%;
   }
 
 /* body */
@@ -16,7 +18,9 @@ body {
 
 }
 /* header */
-
+#Header {
+ 
+}
 #Header #logo{
     /* not visible in mobile view */
     display:none;
@@ -29,9 +33,9 @@ body {
 #Header nav a{
     display:inline-block;
     background-color:rgba(255, 166, 0, 0.925);
-    border:1px solid orange;
+    border:1px solid rgb(255, 136, 0);
     border-radius: 2px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     text-decoration: none;
     text-align: center; 
     color:black;
@@ -46,16 +50,55 @@ body {
     background-color: orange;
 }
 
+/* Menu */
+#Menu {
+    /* display:flex; */
+}
+#Menu section{
+    display:flex;
+    height:
+}
+#Menu img{
+    
+    /* width:25%;
+    height:25%; */
+}
+#Menu p{
+    /* width:75%; */
+    /* height:auto; */
+}
+/* button to top (not to be displayed on bigger resolutions)*/
+
+#goTop {
+    position: fixed;
+    bottom: 5px;
+    float: right;
+    right: 8.5%;
+    left: 88.5%;
+    max-width: 50px;
+    width: 100%;
+    font-size: 12px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color: red;
+    padding: 1.5px;
+    border-radius: 50%;
+
+}
+#goTop:hover {
+    background-color: #7dbbf1;
+}
+#goTop a{
+    text-decoration: none;
+    text-align: center; 
+    color:black;
+}
+ 
 /* form */
-#orderForm{
+#Order{
 
 }
 
 #Photos, #Healthy {
-    /* not visible in mobile view */
-    display:none;
-}
-#Healthy {
     /* not visible in mobile view */
     display:none;
 }

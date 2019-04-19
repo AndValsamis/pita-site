@@ -1,3 +1,61 @@
+/* staring for mobile phones later adding @media for bigger resolutions */
+/* border boxing */
+html {
+    box-sizing: border-box;
+
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin:0 auto;
+    width:90%;
+  }
+
+/* body */
 body {
-    border-style:border-box;
+    font-family: "Lato", sans-serif;
+
+}
+/* header */
+
+#Header #logo{
+    /* not visible in mobile view */
+    display:none;
+}
+#Header nav {
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+}
+#Header nav a{
+    display:inline-block;
+    background-color:rgba(255, 166, 0, 0.925);
+    border:1px solid orange;
+    border-radius: 2px;
+    opacity: 0.5;
+    text-decoration: none;
+    text-align: center; 
+    color:black;
+    padding:8px 12px;
+}
+#Header nav li:nth-child(6),#Header nav li:nth-child(8){
+    /* not visible in mobile view */
+    display:none;
+}
+#Header nav a:hover,a:active{
+    cursor:pointer;
+    background-color: orange;
+}
+
+/* form */
+#orderForm{
+
+}
+
+#Photos, #Healthy {
+    /* not visible in mobile view */
+    display:none;
+}
+#Healthy {
+    /* not visible in mobile view */
+    display:none;
 }

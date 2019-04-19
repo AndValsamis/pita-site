@@ -1,18 +1,18 @@
 <html>
     <head>
         <title>Psitopolio</title>
-        <link rel="stylesheet" href="mainCss.css" type="txt/css">
+        <link rel="stylesheet" type="text/css" href="main.css">
         <script src="mainCode.js" type="txt/javascript"></script>
     </head>
     <body>
         <header id="Header">
             <div id="logo">
-                <img src="" alt="">
+                <img src="images/logo.jpg" alt="logo">
             </div>
             <nav>
                 <li><a href="#Header">Home</a></li>
                 <li><a href="#Menu">Menu</a></li>
-                <li><a href="#ContactUs">Contact us</a></li>
+                <li><a href="#Order">Order</a></li>
                 <li><a href="#Map">Map</a></li>
                 <li><a href="#AboutUs">About us</a></li>
                 <li><a href="#Photos">Photos of our store</a></li>
@@ -26,68 +26,78 @@
             <!-- Menu -->
             <article id="Menu">
                 <section>
-                    <img src="images/pita souvlaki.jpg" alt="">
+                    <img src="images/pita souvlaki.jpg" alt="pita souvlaki">
                     <p class="description">Pita with pork vouvlaki,fried potatoes,tomato,onion and tzatziki</p>
                     <p class="price">2e</p>
                 </section>
                 <section>
-                    <img src="/images/pita souvlaki.jpg" alt="">
+                    <img src="images/pita kotopoulo.jpg" alt="pita chicken">
                     <p class="description">Pita with chicken vouvlaki,fried potatoes,lettuce,onion and tzatziki</p>
                     <p class="price">2e</p>
                 </section>
                 <section>
-                    <img src="/images/pita gyros.jpg" alt="">
+                    <img src="images/pita gyros.jpg" alt="pita gyros">
                     <p class="description">Pita with pork gyro,fried potatoes,tomato,onion and tzatziki</p>
                     <p class="price">2.2e</p>
                 </section>
                 <section>
-                    <img src="/images/pita loukaniko.jpg" alt="">
+                    <img src="images/pita loukaniko.jpg" alt="pita sausage">
                     <p class="description">Pita with pork sausage,fried potatoes,tomato,onion and mustard</p>
                     <p class="price">2.2e</p>
                 </section>
                 <section>
-                    <img src="/images/merida souvlakia.jpg" alt="">
-                    <p class="description">Three pork vouvlaki,three pita,fried potatoes,tomato,onion and tzatziki</p>
+                    <img src="images/merida souvlakia.jpg" alt="souvlakia">
+                    <p class="description">Four pork vouvlaki,two pita,fried potatoes,tomato,onion and tzatziki</p>
                     <p class="price">7.5e</p>
                 </section>
                 <section>
-                    <img href="/images/merida gyros.jpg" alt="">
-                    <p class="description">Gyros,three pita,fried potatoes,tomato,onion and tzatziki</p>
+                    <img src="images/merida gyros.jpg" alt="gyros">
+                    <p class="description">Gyros,three pita,fried potatoes,tomato,onion,lettuce and tzatziki</p>
                     <p class="price">7.5e</p>
                 </section>
            
             </article>
              <!-- Contact form -->
             <article id="ContactUs">
-                <form action="POST">
-                    <label for="name">Your name :</label>
-                    <input type="text" id="name" name="name" value ="Write our name here">
+                <form id ="orderForm" action="POST">
+                    <label for="name">Your name :
+                    <input type="text" id="name" name="name" value ="Write your name here"></label>
                     <label for="email">Your email :</label>
-                    <input type="email" id="email" name="email" value ="Write our email here" required>
+                    <input type="email" id="email" name="email" value ="Write your email here" required>
                     <label for="order">Your order :</label>
-                    <input type="text" id="order" name="order" value ="Write our order here">
+                    <input type="text" id="order" name="order" value ="Write your order here">
                     <button type="submit">Commit your order</button>
                 </form>
             </article>
             <!-- The map -->
             <article id="Map">
-                    <div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=dimosthenous%2010%20athens&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:600px;}</style></div>
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=dimosthenous%2010%20athens&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}</style></div>
             </article>
+
             <!-- Contact info -->
-                <p id="Contact">Andreas Valsamis </br> τηλ:+306976166169</p>
+            <article id="AboutUs">
+                <p id="Contact">Andreas Valsamis </p>
+                <p id="Contact">τηλ:+306976166169</p>
+            </article>
+
+            <!-- About us -->
             <article id="AboutUs">
                 <p>A basic description about the goal of the store like top quality with good prices and respect to the customer</p>
             </article>
+
             <!-- Photos of the store -->
             <article id="Photos">
-                <img src="images/background2.jpg" alt="">
-                <img src="images/background3.jpg" alt="">
-                <img src="images/anapsiktika.jpg" alt="">
+                <img src="images/eksoteriki.jpg" alt="store">
+                <img src="images/background2.jpg" alt="pita">
+                <img src="images/background3.jpg" alt="souvlakia">
+                <img src="images/anapsiktika.jpg" alt="refresments">
             </article>
+
             <!-- Opening hours -->
             <article id="OpenHours">
                 <p>From Monday to Sunday 9:00-22:00</p>
             </article>
+
             <!-- Why it is healthy -->
             <article id="Healthy">
                 <p>A basic description why with quality first matterials the correct procedure it is a healthy diet</p>
@@ -104,7 +114,6 @@
             <article id="CopyRight">
                 <p>by Andreas Valsamis</p>
             </article>
-
         </footer>
       
     </body>

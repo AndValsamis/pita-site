@@ -38,7 +38,7 @@ body {
     text-align: center; 
     color:black;
     padding:8px 12px;
-    transition: transform 0.1s linear;
+    transition: all 0.1s linear;
 }
 #Header nav li:nth-child(6),#Header nav li:nth-child(8){
     /* not visible in mobile view */
@@ -119,15 +119,32 @@ body {
     background-color:rgba(255, 166, 0, 0.925);
     padding:0.5em;
     border-radius: 1em;
+    text-align: center;
 }
-#OrderForm input, #OrderBtn{
+#OrderForm input, #OrderBtn,#OrderArea{
     border-radius: 0.5em;
+    margin:0.5em 0;
     padding:0.3em;
-    margin:0.3em;
     border-style: none;
+    
 }
 #OrderForm label{
-    align
+
+}
+#OrderArea{
+    resize: none;
+}
+#OrderBtn {
+    background: rgba(198, 226, 36, 0.781);
+    color:rgba(247, 45, 9, 0.87);
+    font-weight: 700;
+    transition: all 0.3s linear;
+    width:60%;
+    margin-top:0.5em;
+}
+#OrderBtn:hover{
+    transform: scale(1.05);
+    font-weight: 900;
 }
 #Photos, #Healthy {
     /* not visible in mobile view */

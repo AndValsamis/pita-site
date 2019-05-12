@@ -34,11 +34,11 @@ body {
     background-color:rgba(255, 166, 0, 0.925);
     border:1px solid rgb(255, 136, 0);
     border-radius: 2px;
-    /* opacity: 0.5; */
     text-decoration: none;
     text-align: center; 
     color:black;
     padding:8px 12px;
+    transition: transform 0.1s linear;
 }
 #Header nav li:nth-child(6),#Header nav li:nth-child(8){
     /* not visible in mobile view */
@@ -47,6 +47,7 @@ body {
 #Header nav a:hover,a:active{
     cursor:pointer;
     background-color: orange;
+    transform: scale(1.1);
 }
 
 /* Menu */
@@ -57,28 +58,25 @@ body {
 #Menu section{
     display:flex;
     flex-direction: column;
-    /* padding:1em; */
     border-radius:1em;
     width:90%;
     background-color:rgba(255, 166, 0, 0.925);
     margin:0.5em;
-
+    transition: transform 0.1s linear;
 }
 #Menu section:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
+
 }
 #Menu img{
     border-radius:8px;
- /* flex:1 1 100px; */
-    /* height:25%; 
-    width:25%; */
+
 }
 #Menu p{
     text-align: center;
     padding:1em;
     font-size:1em;
-    /* width:75%; */
-    /* height:auto; */
+
 }
 /* button to top (not to be displayed on bigger resolutions)*/
 #Menu p span {
@@ -98,10 +96,11 @@ body {
     background-color: red;
     padding: 1.5px;
     border-radius: 50%;
-
+    z-index: 1;
+    transform: rotate(90deg);
 }
 #goTop:hover {
-    background-color: #7dbbf1;
+    background-color: #c51c1c;
 }
 #goTop a{
     text-decoration: none;

@@ -33,7 +33,7 @@ body {
     display:inline-block;
     background-color:rgba(255, 166, 0, 0.925);
     border:1px solid rgb(255, 136, 0);
-    border-radius: 2px;
+    border-radius: 0.2em;
     text-decoration: none;
     text-align: center; 
     color:black;
@@ -49,6 +49,11 @@ body {
     background-color: orange;
     transform: scale(1.1);
 }
+#Menu section,#Order {
+    width:90%;
+    margin:0.5em;
+
+}
 
 /* Menu */
 #Menu {
@@ -58,18 +63,16 @@ body {
 #Menu section{
     display:flex;
     flex-direction: column;
-    border-radius:1em;
-    width:90%;
     background-color:rgba(255, 166, 0, 0.925);
-    margin:0.5em;
     transition: transform 0.1s linear;
+    border-radius: 1em;
 }
 #Menu section:hover{
     transform: scale(1.01);
 
 }
 #Menu img{
-    border-radius:8px;
+    border-radius:0.5em;
 
 }
 #Menu p{
@@ -112,7 +115,17 @@ body {
 #Order{
 
 }
-
+#OrderForm{
+    background-color:rgba(255, 166, 0, 0.925);
+    padding:0.5em;
+    border-radius: 1em;
+}
+#OrderForm input, #OrderBtn{
+    border-radius: 0.5em;
+    padding:0.3em;
+    margin:0.3em;
+    border-style: none;
+}
 #Photos, #Healthy {
     /* not visible in mobile view */
     display:none;

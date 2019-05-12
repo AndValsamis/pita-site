@@ -49,7 +49,7 @@ body {
     background-color: orange;
     transform: scale(1.1);
 }
-#Menu section,#Order,#Map,#Contact,#AboutUs {
+#Menu section,#Order,#Map,#Contact,#AboutUs,#GoTop {
     width:90%;
     margin:0.5em;
 
@@ -87,28 +87,25 @@ body {
     color:rgba(247, 70, 0, 0.897);
 }
 #goTop {
-    position: fixed;
-    bottom: 5px;        
-    float: right;
-    right: 8.5%;
-    left: 88.5%;
-    max-width: 50px;
-    width: 100%;
-    font-size: 12px;
+    position: sticky;
+    top: 0%;
+    transform: translate(0.6em);
+    width: 90%;
+    font-size: 0.9em;
     border-color: rgba(85, 85, 85, 0.2);
     background-color: red;
-    padding: 1.5px;
-    border-radius: 50%;
+    padding: 0.5em;
+    border-radius: 0.3em;
     z-index: 1;
-    transform: rotate(90deg);
 }
 #goTop:hover {
     background-color: #c51c1c;
+    color:rgb(105, 97, 97);
 }
 #goTop a{
     text-decoration: none;
     text-align: center; 
-    color:black;
+    color:rgb(61, 45, 45);
 }
  
 /* form */

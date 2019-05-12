@@ -146,6 +146,7 @@ body {
     transform: scale(1.05);
     font-weight: 900;
 }
+
 #Photos, #Healthy {
     /* not visible in mobile view */
     display:none;

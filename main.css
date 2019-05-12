@@ -49,7 +49,7 @@ body {
     background-color: orange;
     transform: scale(1.1);
 }
-#Menu section,#Order {
+#Menu section,#Order,#Map {
     width:90%;
     margin:0.5em;
 

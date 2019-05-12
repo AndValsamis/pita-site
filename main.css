@@ -31,9 +31,8 @@ body {
 }
 #Header nav a{
     display:inline-block;
-    background-color:rgba(255, 166, 0, 0.925);
+    background-color:rgba(255, 145, 0, 0.959);
     border:1px solid rgb(255, 136, 0);
-    border-radius: 0.2em;
     text-decoration: none;
     text-align: center; 
     color:black;
@@ -96,11 +95,12 @@ main {
 #goTop {
     display:inline-block;
     font-size: 0.9em;
+    font-weight: 600;
     border-color: rgba(85, 85, 85, 0.2);
     background: red;
     position: sticky;
     top: 0%;
-    border-radius: 0.3em;
+    border-radius: 0.1em;
     z-index: 1;
     text-decoration: none;
     text-align: center; 
@@ -153,4 +153,37 @@ main {
 #Photos, #Healthy {
     /* not visible in mobile view */
     display:none;
+}
+
+/* Footer */
+footer{
+    display:flex;
+    flex-direction: column;
+
+}
+#SocialMedia{
+    display:flex;
+    margin-top:0.5em;
+}
+#SocialMedia a {
+    display:inline-block;
+    background-color:rgba(255, 145, 0, 0.959);
+    border:1px solid rgb(255, 136, 0);
+    text-decoration: none;
+    text-align: center; 
+    color:black;
+    padding:0.2em 1em;
+    transition: all 0.1s linear;
+    
+}
+#SocialMedia a:hover,a:active{
+    cursor:pointer;
+    /* background-color: orange; */
+    transform: scale(1.05);
+}
+#CopyRight{
+    margin-top:0.1em;
+    background-color:rgba(255, 145, 0, 0.959);
+    border:1px solid rgb(255, 136, 0);
+    text-align: center;
 }

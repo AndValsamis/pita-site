@@ -49,7 +49,7 @@ body {
     background-color: orange;
     transform: scale(1.1);
 }
-#Menu section,#Order,#Map {
+#Menu section,#Order,#Map,#Contact,#AboutUs {
     width:90%;
     margin:0.5em;
 
@@ -115,7 +115,7 @@ body {
 #Order{
 
 }
-#OrderForm{
+#OrderForm,#Contact,#AboutUs{
     background-color:rgba(255, 166, 0, 0.925);
     padding:0.5em;
     border-radius: 1em;
@@ -146,7 +146,9 @@ body {
     transform: scale(1.05);
     font-weight: 900;
 }
-
+#Contact h4,#AboutUs h4{
+    margin-bottom:0.5em;
+}
 #Photos, #Healthy {
     /* not visible in mobile view */
     display:none;

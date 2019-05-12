@@ -49,10 +49,15 @@ body {
     background-color: orange;
     transform: scale(1.1);
 }
-#Menu section,#Order,#Map,#Contact,#AboutUs,#GoTop,#OpenHours,#Healthy {
+main {
     width:90%;
-    margin:0.5em;
-
+    margin-top:0.5em;
+    /* margin:0 auto; */
+}
+#Menu section,#Order,#Map,#Contact,#AboutUs,#OpenHours,#Healthy,#GoTop {
+    /* width:90%; */
+    /* */
+    margin-top:0.5em; 
 }
 
 /* Menu */
@@ -86,28 +91,27 @@ body {
     font-size:1.2em;
     color:rgba(247, 70, 0, 0.897);
 }
+
+
 #goTop {
-    position: sticky;
-    top: 0%;
-    transform: translate(0.6em);
-    width: 90%;
+    display:inline-block;
     font-size: 0.9em;
     border-color: rgba(85, 85, 85, 0.2);
-    background-color: red;
-    padding: 0.5em;
+    background: red;
+    position: sticky;
+    top: 0%;
     border-radius: 0.3em;
     z-index: 1;
-}
-#goTop:hover {
-    background-color: #c51c1c;
-    color:rgb(105, 97, 97);
-}
-#goTop a{
     text-decoration: none;
     text-align: center; 
     color:rgb(61, 45, 45);
+    padding:5px;
+    transition: all 0.3s linear;
 }
- 
+#goTop:hover {
+    background-color: #e61515;
+    color:rgb(69, 184, 41);
+}
 /* form */
 #Order{
 

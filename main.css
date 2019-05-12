@@ -126,6 +126,9 @@ body {
     margin:0.3em;
     border-style: none;
 }
+#OrderForm label{
+    align
+}
 #Photos, #Healthy {
     /* not visible in mobile view */
     display:none;

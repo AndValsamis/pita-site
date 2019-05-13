@@ -13,12 +13,15 @@ html {
 
 /* body */
 body {
-    font-family: "Lato", sans-serif;
-    background: rgba(223, 236, 36, 0.685);
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(135deg, rgba(223,236,36,1) 36%, rgba(80,221,176,1) 100%);
+    max-width: 300px;
 }
 /* header */
 #Header {
- 
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
 }
 #Header #logo{
     /* not visible in mobile view */
@@ -159,7 +162,7 @@ main {
 footer{
     display:flex;
     flex-direction: column;
-
+    font-family: 'Josefin Sans', sans-serif;
 }
 #SocialMedia{
     display:flex;

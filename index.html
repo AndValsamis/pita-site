@@ -4,6 +4,7 @@
     <head>
         <title>Psitopolio</title>
         <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu" rel="stylesheet">
         <!-- <script src="mainCode.js" type="txt/javascript"></script> -->
     </head>
     <body>
@@ -60,14 +61,14 @@
             <article id="Order">
                 <form id ="OrderForm" action="POST">
                     <label for="name">Your name 
-                         <input type="text" id="name" name="name" required placeholder ="Write your name here">
+                         <input type="text" id="name" name="name" required="true" placeholder ="Write your name here">
                     </label>
                     <label for="email">Your email 
-                        <input type="email" id="email" name="email" placeholder ="Write your email here" required>
+                        <input type="email" id="email" name="email" placeholder ="Write your email here" required="true">
                     </label>
                     <label for="order">Your order 
                         <!-- <input type="textarea" id="order" name="order" placeholder ="Write your order here"> -->
-                        <textarea id="OrderArea" placeholder="Write your order here" cols="30" rows="5"></textarea>
+                        <textarea id="OrderArea" name = "OrderArea" required="true" placeholder="Write your order here" cols="30" rows="5"></textarea>
                     </label>                 
                     <input id="OrderBtn" type = "submit" value = "Place your Order" />
                 </form>
@@ -116,9 +117,9 @@
         <footer>
             <section id="SocialMedia">
                 <!-- With a few good reviews -->
-                <a href="">facebook</a>
+                <a href="#">Facebook</a>
                 <!-- with a few good customer videos -->
-                <a href="">instagram</a>
+                <a href="#">Instagram</a>
             </section>
             <section id="CopyRight">
                 <p>by Andreas Valsamis</p>

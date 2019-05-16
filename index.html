@@ -2,14 +2,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Psitopolio</title>
+        <title>Greek fast food shop</title>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu" rel="stylesheet">
         <!-- <script src="mainCode.js" type="txt/javascript"></script> -->
     </head>
     <body>
-        <header id="Header">
-            <section id="logo">
+        <header id="HeaderId" class="header">
+            <section id="LogoId" class="logo">
                 <img src="images/logo.jpg" alt="logo">
             </section>
             <nav>
@@ -24,62 +24,61 @@
             </nav>
         </header>
 
-        <main>
+        <main class="main">
             <!-- Fixed button to go to top of page -->
-            <a id="goTop" href="#Header">Go to the Menu</a>
+            <a id="GoTopId" class="goTop" href="#Header">Go to the Menu</a>
             <!-- select language en/gr/cz -->
             <!-- Menu -->
 
-            <article id="Menu">
+            <article id="MenuId" class="menu mainEl" >
                 <section>
                     <img src="images/pita souvlaki.jpg" alt="pita souvlaki">
-                    <p class="description">Pita with pork souvlaki,fried potatoes,tomato,onion and tzatziki : <span class="price">2€</span></p>
+                    <p class="description">Pita with pork souvlaki, fried potatoes, tomato, onion and tzatziki : <span class="price">2€</span></p>
                 </section>
                 <section>
                     <img src="images/pita kotopoulo.jpg" alt="pita chicken">
-                    <p class="description">Pita with chicken souvlaki,fried potatoes,lettuce,onion and tzatziki : <span class="price">2€</span></p>
+                    <p class="description">Pita with chicken souvlaki, fried potatoes, lettuce, onion and tzatziki : <span class="price">2€</span></p>
                 </section>
                 <section>
                     <img src="images/pita gyros.jpg" alt="pita gyros">
-                    <p class="description">Pita with pork gyro,fried potatoes,tomato,onion and tzatziki : <span class="price">2.2€</span></p>
+                    <p class="description">Pita with pork gyro, fried potatoes, tomato, onion and tzatziki : <span class="price">2.2€</span></p>
                 </section>
                 <section>
                     <img src="images/pita loukaniko.jpg" alt="pita sausage">
-                    <p class="description">Pita with pork sausage,fried potatoes,tomato,onion and mustard : <span class="price">2.2€</span></p>
+                    <p class="description">Pita with pork sausage, fried potatoes, tomato, onion and mustard : <span class="price">2.2€</span></p>
                 </section>
                 <section>
                     <img src="images/merida souvlakia.jpg" alt="souvlakia">
-                    <p class="description">Four pork souvlaki,two pita,fried potatoes,tomato,onion and tzatziki : <span class="price">7.5€</span></p>
+                    <p class="description">Four pork souvlaki, two pita, fried potatoes, tomato, onion and tzatziki : <span class="price">7.5€</span></p>
                 </section>
                 <section>
                     <img src="images/merida gyros.jpg" alt="gyros">
-                    <p class="description">Gyros,three pita,fried potatoes,tomato,onion,lettuce and tzatziki : <span class="price">7.5€</span></p>
+                    <p class="description">Gyros,three pita, fried potatoes, tomato,onion, lettuce and tzatziki : <span class="price">7.5€</span></p>
                 </section>
            
-            </article>
+            </article >
              <!-- Order form -->
-            <article id="Order">
-                <form id ="OrderForm" action="#" method="POST">
+            <article id="OrderId" class="order mainEl">
+                <form id ="OrderFormId" class="orderForm" action="#" method="POST">
                     <label for="name">Your name 
-                         <input type="text" id="name" name="name" required="true" placeholder ="Write your name here">
+                         <input type="text" id="NameId" class="inputEl" name="name" required="true" placeholder ="Write your name here">
                     </label>
                     <label for="email">Your email 
-                        <input type="email" id="email" name="email" placeholder ="Write your email here" required="true">
+                        <input type="email" id="EmailId" class="inputEl" name="email" placeholder ="Write your email here" required="true">
                     </label>
                     <label for="order">Your order 
-                        <!-- <input type="textarea" id="order" name="order" placeholder ="Write your order here"> -->
-                        <textarea id="OrderArea" name = "OrderArea" required="true" placeholder="Write your order here" cols="30" rows="5"></textarea>
+                        <textarea id="OrderAreaId" class="inputEl" name = "OrderArea" required="true" placeholder="Write your order here" cols="30" rows="5"></textarea>
                     </label>                 
-                    <input id="OrderBtn" type = "submit" value = "Place your Order" />
+                    <input id="OrderBtnId" class="inputEl" type = "submit" value = "Place your Order" />
                 </form>
             </article>
             <!-- The map -->
-            <article id="Map">
+            <article class="map mainEl">
                     <div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=dimosthenous%2010%20athens&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}</style></div>
             </article>
 
             <!-- Contact info -->
-            <article id="Contact">
+            <article id="ContactId"class="contact mainEl">
                 <h4>Contact Information</h4>
                 <p>Giannis Papadopoulos</p>
                 <p>τηλ:+306976166169</p>
@@ -87,13 +86,13 @@
             </article>
 
             <!-- About us -->
-            <article id="AboutUs">
+            <article id="AboutUsId" class="aboutUs mainEl">
                 <h4>Food Quality Description</h4>
                 <p>A basic description about the goal of the store like top quality with good prices and respect to the customer</p>
             </article>
 
             <!-- Photos of the store -->
-            <article id="Photos">
+            <article id="PhotosId" class="photos mainEl">
                 <img src="images/eksoteriki.jpg" alt="store">
                 <img src="images/background2.jpg" alt="pita">
                 <img src="images/background3.jpg" alt="souvlakia">
@@ -101,27 +100,27 @@
             </article>
 
             <!-- Opening hours -->
-            <article id="OpenHours">
+            <article id="OpenHoursId" class="OpenHours mainEl">
                 <h4>Opening Hours</h4>
                 <p>From Monday to Saturday 9:00-22:00</p>
             </article>
 
             <!-- Why it is healthy -->
-            <article id="Healthy">
+            <article id="HealthyId" class="healthy mainEl">
                 <h4>Mediteranian Quality Food</h4>
                 <p>A basic description why with quality first matterials the correct procedure it is a healthy diet</p>
             </article>
             
         </main>
  
-        <footer>
-            <section id="SocialMedia">
+        <footer class="footer">
+            <section id="SocialMediaId" class=socialMedia">
                 <!-- With a few good reviews -->
                 <a href="#">Facebook</a>
                 <!-- with a few good customer videos -->
                 <a href="#">Instagram</a>
             </section>
-            <section id="CopyRight">
+            <section id="CopyRightId" class="copyRight">
                 <p>by Andreas Valsamis</p>
             </section>
         </footer>

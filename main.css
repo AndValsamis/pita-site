@@ -15,24 +15,26 @@ html {
 body {
     font-family: 'Ubuntu', sans-serif;
     background: linear-gradient(135deg, rgba(223,236,36,1) 36%, rgba(80,221,176,1) 100%);
+    min-width: 150px;
     max-width: 300px;
+    overflow: scroll;
 }
 /* header */
-#Header {
+.header {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1em;
     font-weight: 600;
 }
-#Header #logo{
+.header .logo{
     /* not visible in mobile view */
     display:none;
 }
-#Header nav {
+.header nav {
     list-style-type: none;
     display:flex;
     flex-direction: column;
 }
-#Header nav a{
+.header nav a{
     display:inline-block;
     background-color:rgba(255, 145, 0, 0.959);
     border:1px solid rgb(255, 136, 0);
@@ -42,60 +44,60 @@ body {
     padding:8px 12px;
     transition: all 0.1s linear;
 }
-#Header nav li:nth-child(6),#Header nav li:nth-child(8){
+.header nav li:nth-child(6),.header nav li:nth-child(8){
     /* not visible in mobile view */
+
     display:none;
 }
-#Header nav a:hover,a:active{
+.header nav a:hover,.header a:active{
     cursor:pointer;
     background-color: orange;
     transform: scale(1.1);
 }
-main {
+.main {
     width:90%;
     margin-top:0.5em;
-    /* margin:0 auto; */
 }
-#Menu section,#Order,#Map,#Contact,#AboutUs,#OpenHours,#Healthy,#GoTop {
-    /* width:90%; */
-    /* */
+.menu section,.mainEl,.goTop {
     margin-top:0.5em; 
 }
 
 /* Menu */
-#Menu {
+.menu {
     display:flex;
     flex-direction: column;
 }
-#Menu section{
+.menu section{
     display:flex;
     flex-direction: column;
     background-color:rgba(255, 166, 0, 0.925);
     transition: transform 0.1s linear;
     border-radius: 1em;
 }
-#Menu section:hover{
+.menu section:hover{
     transform: scale(1.01);
 
 }
-#Menu img{
+.menu img{
     border-radius:0.5em;
 
 }
-#Menu p{
+/* //.description */
+.menu .description{
     text-align: center;
     padding:1em;
     font-size:1em;
-
+    /* overflow: scroll; */
 }
+/* .price */
 /* button to top (not to be displayed on bigger resolutions)*/
-#Menu p span {
+.menu .description .price {
     font-size:1.2em;
     color:rgba(247, 70, 0, 0.897);
 }
 
 
-#goTop {
+.goTop {
     display:inline-block;
     font-size: 0.9em;
     font-weight: 600;
@@ -111,34 +113,35 @@ main {
     padding:5px;
     transition: all 0.3s linear;
 }
-#goTop:hover {
+.goTop:hover {
     background-color: #e61515;
     color:rgb(69, 184, 41);
 }
 /* form */
-#Order{
+.order{
 
 }
-#OrderForm,#Contact,#AboutUs,#OpenHours,#Healthy{
+/* attention to the below line */
+.mainEl:not(.menu):not(.map){
     background-color:rgba(255, 166, 0, 0.925);
     padding:0.5em;
     border-radius: 1em;
     text-align: center;
 }
-#OrderForm input, #OrderBtn,#OrderArea{
+.inputEl{
     border-radius: 0.5em;
     margin:0.5em 0;
     padding:0.3em;
     border-style: none;
     
 }
-#OrderForm label{
-
+.orderForm label{
+/* italics */
 }
-#OrderArea{
+.orderArea{
     resize: none;
 }
-#OrderBtn {
+.orderBtn {
     background: rgba(198, 226, 36, 0.781);
     color:rgba(247, 45, 9, 0.87);
     font-weight: 700;
@@ -146,29 +149,29 @@ main {
     width:60%;
     margin-top:0.5em;
 }
-#OrderBtn:hover{
+.orderBtn:hover{
     transform: scale(1.05);
     font-weight: 900;
 }
-#Contact h4,#AboutUs h4{
+.contact h4,.aboutUs h4{
     margin-bottom:0.5em;
 }
-#Photos, #Healthy {
+.photos, .healthy {
     /* not visible in mobile view */
     display:none;
 }
 
 /* Footer */
-footer{
+.footer{
     display:flex;
     flex-direction: column;
     font-family: 'Josefin Sans', sans-serif;
 }
-#SocialMedia{
+.socialMedia{
     display:flex;
     margin-top:0.5em;
 }
-#SocialMedia a {
+.socialMedia a {
     display:inline-block;
     background-color:rgba(255, 145, 0, 0.959);
     border:1px solid rgb(255, 136, 0);
@@ -179,12 +182,12 @@ footer{
     transition: all 0.1s linear;
     
 }
-#SocialMedia a:hover,a:active{
+.socialMedia a:hover,a:active{
     cursor:pointer;
     /* background-color: orange; */
     transform: scale(1.05);
 }
-#CopyRight{
+.copyRight{
     margin-top:0.1em;
     background-color:rgba(255, 145, 0, 0.959);
     border:1px solid rgb(255, 136, 0);

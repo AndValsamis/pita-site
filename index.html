@@ -26,7 +26,7 @@
 
         <main class="main">
             <!-- Fixed button to go to top of page -->
-            <a id="GoTopId" class="goTop" href="#Header">Go to the Menu</a>
+            <a id="GoTopId" class="goTop" href="#HeaderId">Go to the Menu</a>
             <!-- select language en/gr/cz -->
             <!-- Menu -->
 
@@ -67,9 +67,9 @@
                         <input type="email" id="EmailId" class="inputEl" name="email" placeholder ="Write your email here" required="true">
                     </label>
                     <label for="order">Your order 
-                        <textarea id="OrderAreaId" class="inputEl" name = "OrderArea" required="true" placeholder="Write your order here" cols="30" rows="5"></textarea>
+                        <textarea id="OrderAreaId" class="inputEl" name = "OrderArea" required="true" placeholder="Your order" cols="30" rows="5"></textarea>
                     </label>                 
-                    <input id="OrderBtnId" class="inputEl" type = "submit" value = "Place your Order" />
+                    <input id="OrderBtnId" class="orderBtn" type = "submit" value = "Place your Order"/>
                 </form>
             </article>
             <!-- The map -->
@@ -81,8 +81,8 @@
             <article id="ContactId"class="contact mainEl">
                 <h4>Contact Information</h4>
                 <p>Giannis Papadopoulos</p>
-                <p>τηλ:+306976166169</p>
-                <p>NikosPapadopoulos@email.com</p>
+                <a href="tel:+6611221122">Press to Call Us</a>
+                <a href="mailto:someone@yoursite.com">Press to mail Us</a>
             </article>
 
             <!-- About us -->
@@ -102,7 +102,8 @@
             <!-- Opening hours -->
             <article id="OpenHoursId" class="OpenHours mainEl">
                 <h4>Opening Hours</h4>
-                <p>From Monday to Saturday 9:00-22:00</p>
+                <p class="days" >From Monday to Saturday</p>
+                <p class="workHours">9:00-22:00</p>
             </article>
 
             <!-- Why it is healthy -->
@@ -114,7 +115,7 @@
         </main>
  
         <footer class="footer">
-            <section id="SocialMediaId" class=socialMedia">
+            <section id="SocialMediaId" class="socialMedia">
                 <!-- With a few good reviews -->
                 <a href="#">Facebook</a>
                 <!-- with a few good customer videos -->

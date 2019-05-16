@@ -61,7 +61,12 @@ body {
 .menu section,.mainEl,.goTop {
     margin-top:0.5em; 
 }
-
+.mainEl:not(.menu):not(.map){
+    background-color:rgba(255, 166, 0, 0.925);
+    padding:0.5em;
+    border-radius: 1em;
+    text-align: center;
+}
 /* Menu */
 .menu {
     display:flex;
@@ -87,7 +92,7 @@ body {
     text-align: center;
     padding:1em;
     font-size:1em;
-    /* overflow: scroll; */
+    overflow: scroll;
 }
 /* .price */
 /* button to top (not to be displayed on bigger resolutions)*/
@@ -121,13 +126,9 @@ body {
 .order{
 
 }
-/* attention to the below line */
-.mainEl:not(.menu):not(.map){
-    background-color:rgba(255, 166, 0, 0.925);
-    padding:0.5em;
-    border-radius: 1em;
-    text-align: center;
-}
+.orderForm label{
+    font-style: italic;
+ }
 .inputEl{
     border-radius: 0.5em;
     margin:0.5em 0;
@@ -135,32 +136,69 @@ body {
     border-style: none;
     
 }
-.orderForm label{
-/* italics */
-}
+
 .orderArea{
     resize: none;
 }
+
 .orderBtn {
     background: rgba(198, 226, 36, 0.781);
     color:rgba(247, 45, 9, 0.87);
     font-weight: 700;
+    font-size:0.9em;
     transition: all 0.3s linear;
     width:60%;
     margin-top:0.5em;
+    padding: 0.2em;
+    border:none;
+    border-radius: 0.5em;
+    min-width: max-content;
 }
 .orderBtn:hover{
     transform: scale(1.05);
     font-weight: 900;
 }
-.contact h4,.aboutUs h4{
+/* Contact */
+.contact p{
+    margin-top:0.5em;
+}
+
+.contact a{
+    background: rgba(198, 226, 36, 0.781);
+    color:rgba(247, 45, 9, 0.87);
+    font-weight: 700;
+    font-size:0.9em;
+    width:60%;
+    margin-top:0.5em;
+    border:none;
+    border-radius: 0.5em;
+    min-width: max-content;
+    display:inline-block;
+    text-decoration: none;
+    text-align: center; 
+    color:red;
+    transition: all 0.3s linear;
+}
+.contact a:hover{
+    transform: scale(1.05);
+    font-weight:900;
+}
+/* AboutUs */
+.aboutUs h4{
     margin-bottom:0.5em;
 }
+/* Photos */
 .photos, .healthy {
     /* not visible in mobile view */
     display:none;
 }
-
+.OpenHours *:not(:first-child){
+    margin-top:0.5em;
+}
+.OpenHours .workHours{
+    font-size:1.2em;
+    color:rgba(247, 70, 0, 0.897);
+}
 /* Footer */
 .footer{
     display:flex;
@@ -184,7 +222,6 @@ body {
 }
 .socialMedia a:hover,a:active{
     cursor:pointer;
-    /* background-color: orange; */
     transform: scale(1.05);
 }
 .copyRight{

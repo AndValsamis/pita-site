@@ -261,15 +261,23 @@ body {
         
     }
     .menu section{
-        flex:33%;
-        max-width: 33%;
+        flex:50%;
+        max-width: 50%;
     }
 }
 /* Media Queries for laptop*/
 @media only screen and (min-width:900px){
-    /* .menu {
-        background-image: url(images/eksoteriki.jpg)
-    } */
+    body {
+        width:100%;border-radius: initial;
+
+    }
+    .main {
+        width:100%;
+        border-radius: unset;
+        margin:0;
+        padding:0;
+        /* background-image: url(images/eksoteriki.jpg) */
+    }
     .header nav li:nth-child(6),.header nav li:nth-child(8){
         /* visible in big screens */
         display: block;
@@ -277,6 +285,13 @@ body {
     .header .logo{
         /* visible in big screens */
         display:block;
+    }
+    .menu section {
+            flex:33%;
+            max-width: 33%;
+            border-radius: initial;
+            /* width:100%;border-radius: 0%; */
+        /* margin:1em; */
     }
     .photos, .healthy {
         /* visible in big screens  */

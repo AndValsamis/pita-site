@@ -3,6 +3,8 @@
 <html>
     <head>
         <title>Greek fast food shop</title>
+        <meta name='viewport' content='width=device-width, user-scalable=no,
+    initial-scale=1, maximum-scale=1, minimum-scale=1'/>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu" rel="stylesheet">
         <!-- <script src="mainCode.js" type="txt/javascript"></script> -->
@@ -10,17 +12,16 @@
     <body>
         <header id="HeaderId" class="header">
             <section id="LogoId" class="logo">
-                <img src="images/logo.jpg" alt="logo">
             </section>
             <nav>
-                <li><a href="#Header">Home</a></li>
-                <li><a href="#Menu">Menu</a></li>
-                <li><a href="#Order">Order</a></li>
-                <li><a href="#Map">Map</a></li>
-                <li><a href="#AboutUs">About us</a></li>
-                <li><a href="#Photos">Photos of our store</a></li>
-                <li><a href="#OpenHours">Open hours</a></li>
-                <li><a href="#Healthy">Why it is Healthy</a></li>
+                <li><a href="#HeaderId">Home</a></li>
+                <li><a href="#MenuId">Menu</a></li>
+                <li><a href="#OrderId">Order</a></li>
+                <li><a href="#MapId">Map</a></li>
+                <li><a href="#AboutUsId">About us</a></li>
+                <li><a href="#PhotosId">Photos of our store</a></li>
+                <li><a href="#OpenHoursId">Open hours</a></li>
+                <li><a href="#HealthyId">Why it is Healthy</a></li>
             </nav>
         </header>
 
@@ -73,10 +74,14 @@
                 </form>
             </article>
             <!-- The map -->
-            <article class="map mainEl">
+            <article id = "MapId" class="map mainEl">
                     <div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=dimosthenous%2010%20athens&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}</style></div>
             </article>
-
+            <!-- Why it is healthy -->
+            <article id="HealthyId" class="healthy mainEl">
+                    <h4>Mediteranian Quality of Food</h4>
+                    <p>A basic description why with quality first matterials the correct procedure it is a healthy diet</p>
+                </article>
             <!-- Contact info -->
             <article id="ContactId"class="contact mainEl">
                 <h4>Contact Information</h4>
@@ -106,11 +111,7 @@
                 <p class="workHours">9:00-22:00</p>
             </article>
 
-            <!-- Why it is healthy -->
-            <article id="HealthyId" class="healthy mainEl">
-                <h4>Mediteranian Quality Food</h4>
-                <p>A basic description why with quality first matterials the correct procedure it is a healthy diet</p>
-            </article>
+
             
         </main>
  

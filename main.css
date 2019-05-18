@@ -15,26 +15,36 @@ html {
 body {
     font-family: 'Ubuntu', sans-serif;
     background: linear-gradient(135deg, rgba(223,236,36,1) 36%, rgba(80,221,176,1) 100%);
-    min-width: 150px;
-    max-width: 300px;
-    overflow: scroll;
+    /* overflow: scroll; */
+
 }
+/* Logo */
+.header .logo{
+    /* not visible in mobile view */
+    display:none;
+}
+/* .header .logo img {
+    height:100px;
+    width:130px;
+
+} */
 /* header */
 .header {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1em;
     font-weight: 600;
 }
-.header .logo{
-    /* not visible in mobile view */
-    display:none;
-}
+
+
 .header nav {
-    list-style-type: none;
     display:flex;
     flex-direction: column;
+    /* justify-content: space-between; */
+    list-style-type: none;
 }
-.header nav a{
+
+
+.header nav li a{
     display:inline-block;
     background-color:rgba(255, 145, 0, 0.959);
     border:1px solid rgb(255, 136, 0);
@@ -43,20 +53,22 @@ body {
     color:black;
     padding:8px 12px;
     transition: all 0.1s linear;
+    min-width: max-content;
+    /* flex:1 1 50px; */
 }
 .header nav li:nth-child(6),.header nav li:nth-child(8){
     /* not visible in mobile view */
-
     display:none;
 }
+
 .header nav a:hover,.header a:active{
     cursor:pointer;
     background-color: orange;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .main {
-    width:90%;
     margin-top:0.5em;
+    width:90%;
 }
 .menu section,.mainEl,.goTop {
     margin-top:0.5em; 
@@ -72,6 +84,8 @@ body {
     display:flex;
     flex-direction: column;
 }
+
+
 .menu section{
     display:flex;
     flex-direction: column;
@@ -85,17 +99,15 @@ body {
 }
 .menu img{
     border-radius:0.5em;
-
 }
 /* //.description */
 .menu .description{
     text-align: center;
     padding:1em;
     font-size:1em;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 /* .price */
-/* button to top (not to be displayed on bigger resolutions)*/
 .menu .description .price {
     font-size:1.2em;
     color:rgba(247, 70, 0, 0.897);
@@ -230,3 +242,48 @@ body {
     border:1px solid rgb(255, 136, 0);
     text-align: center;
 }
+/* Media Queries for tablet*/
+@media only screen and (min-width:480px){
+    .header .logo {
+        height:5em;
+        background-image: url(images/logo.jpg);
+        background-repeat: repeat-x;
+    }
+    .goTop{
+        display: none;
+    }
+    .header nav {
+        flex-direction: row;
+    }
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .menu section{
+        flex:33%;
+        max-width: 33%;
+    }
+}
+/* Media Queries for laptop*/
+@media only screen and (min-width:900px){
+    /* .menu {
+        background-image: url(images/eksoteriki.jpg)
+    } */
+    .header nav li:nth-child(6),.header nav li:nth-child(8){
+        /* visible in big screens */
+        display: block;
+    }
+    .header .logo{
+        /* visible in big screens */
+        display:block;
+    }
+    .photos, .healthy {
+        /* visible in big screens  */
+        display:block;
+    }
+    .header .logo img {
+        background-image:url(images/logo.jpg);
+    }
+}
+/*  */

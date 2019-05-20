@@ -23,11 +23,6 @@ body {
     /* not visible in mobile view */
     display:none;
 }
-/* .header .logo img {
-    height:100px;
-    width:130px;
-
-} */
 /* header */
 .header {
     font-family: 'Josefin Sans', sans-serif;
@@ -68,13 +63,15 @@ body {
     transform: scale(1.05);
 }
 .main {
+    display:flex;
+    flex-direction: column;
     margin-top:0.5em;
     width:90%;
 }
 .menu section,.mainEl,.goTop {
     margin-top:0.5em; 
 }
-.mainEl:not(.menu):not(.map){
+.mainEl:not(.menu):not(.map):not(.photos){
     background-color:rgba(255, 166, 0, 0.925);
     padding:0.5em;
     border-radius: 1em;
@@ -269,36 +266,50 @@ body {
 }
 /* Media Queries for laptop*/
 @media only screen and (min-width:900px){
-    body {
 
+    .header nav li:nth-child(6),.header nav li:nth-child(8),.header .logo,.photos, .healthy{
+        /* visible in big screens */
+        display: block;
+    }
+
+    /* .header .logo img {
+        background-image:url(images/logo.jpg);
+    } */
+    body,.main,.footer,.header{
+        background-color: black;
+    }
+    .header nav{
+        margin-top: 0.5em;
     }
     .header nav li a {
         font-size: 1.5em;
     }
-    .main {
+    .main{
+        margin-top:0;
         width:100%;
-        margin:0;
-        padding:0;
-        /* background-image: url(images/eksoteriki.jpg) */
+ 
     }
-    .header nav li:nth-child(6),.header nav li:nth-child(8){
-        /* visible in big screens */
-        display: block;
+    .mainEl:not(.menu):not(.map):not(.photos){
+        border-radius: 0;
     }
-    .header .logo{
-        /* visible in big screens */
-        display:block;
+    .menu{
+        width:99%;
     }
     .menu section {
-            flex:33%;
-            max-width: 33%;
+        flex:33%;
+        max-width: 33%;
     }
-    .photos, .healthy {
-        /* visible in big screens  */
-        display:block;
+    .contact a{
+        width:25%;
     }
-    .header .logo img {
-        background-image:url(images/logo.jpg);
+    .photos{
+        order:2;
+    }
+    .footer .socialMedia :first-child{
+        margin-right: 1em;
+    }
+    .copyRight{
+        margin-top: 0.5em;
     }
 }
 /*  */
